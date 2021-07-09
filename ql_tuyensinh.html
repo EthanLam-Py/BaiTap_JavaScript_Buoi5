@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai Tap JavaScript Buoi 4</title>
+
+    <link rel="stylesheet" href="css/ql_tuyensinh.css">
+
+</head>
+<body>
+    <div class="question1">
+        <h1>Quản Lý Tuyển Sinh</h1>
+        <div class="question1__input">
+            <label>Điểm Chuẩn Của Hội Đồng</label>
+            <input type="number" id='diemChuan'>
+
+            <label>Điểm Môn Toán</label>
+            <input type="number" id='toan'>
+
+            <label>Điểm Môn Văn</label>
+            <input type="number" id='van'>
+
+            <label>Điểm Môn Anh Văn</label>
+            <input type="number" id='anhVan'>
+
+            <label>Khu Vực</label>
+            <div class='khuVuc'>
+                <input type="radio" name="khuVuc" id="A" value="A">
+                <label for="A">A</label>
+                
+                <input type="radio" name="khuVuc" id="B" value="B">
+                <label for="B">B</label>
+                
+                <input type="radio" name="khuVuc" id="C" value="C">
+                <label for="C">C</label>
+
+                <input type="radio" name="khuVuc" id="X" value="X">
+                <label for="X">X</label>
+            </div>
+
+            <label>Đối Tượng</label>
+            <div class='doiTuong'>
+                <input type="radio" name="doiTuong" id="1" value="1">
+                <label for="1">1</label>
+                
+                <input type="radio" name="doiTuong" id="2" value="2">
+                <label for="2">2</label>
+                
+                <input type="radio" name="doiTuong" id="3" value="3">
+                <label for="3">3</label>
+
+                <input type="radio" name="doiTuong" id="0" value="0">
+                <label for="0">0</label>
+            </div>
+
+
+            <button id='question1__btn'>Kết Quả</button>
+
+        </div>
+
+        <div class="question1__result" id='question1__result'>
+            <p>Kết Quả:</p>
+            <span id ='question1__resultspan1' ></span>
+
+            <p>Tổng Số Điểm Đạt Được:</p>
+            <span id ='question1__resultspan2' ></span>
+
+        </div>
+        
+    </div>
+    
+
+
+
+
+    <script src="js/ql_tuyensinh.js"></script>
+
+    <script>
+        document.getElementById('question1__btn').addEventListener('click', ketQua)
+        
+    </script>
+
+</body>
+</html>

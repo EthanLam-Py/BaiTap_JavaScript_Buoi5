@@ -1,0 +1,13 @@
+/* Question 1 */
+.question1__input{
+    display: flex;
+    flex-direction: column;
+
+    width: 15%;
+}
+.question1__input button{
+    margin: 20px 0px;
+}
+.question1__result{
+    display: none;
+}

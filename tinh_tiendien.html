@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai Tap JavaScript Buoi 4</title>
+
+    <link rel="stylesheet" href="css/tinh_tiendien.css">
+
+</head>
+<body>
+    <div class="question2">
+        <h1>Tính Tiền Điện</h1>
+        <div class="question2__input">
+
+            <label>Tên</label>
+            <input type="text" id='ten'>
+
+            <label>Số Kw</label>
+            <input type="number" id='soKw'>
+
+            <button id='question2__btn'>Tính Tiền Điện</button>
+
+        </div>
+
+        <div class="question2__result" id='question2__result'>
+            <p>Tổng Tiền</p>
+            <span id ='question2__resultspan' ></span>
+        </div>
+        
+    </div>
+    
+
+
+
+
+    <script src="js/tinh_tiendien.js"></script>
+
+    <script>
+        document.getElementById('question2__btn').addEventListener('click', ketQua)
+        
+    </script>
+
+</body>
+</html>
